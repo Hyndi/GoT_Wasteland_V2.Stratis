@@ -13,6 +13,6 @@ publicVariable "moderators";
 administrators = [];
 publicVariable "administrators";
 
-serverAdministrators = ["76561197960482553"		 //JoSchaap 
+serverAdministrators = ["76561198066249546"		 //Hyndi
                     ]; 
 publicVariable "serverAdministrators";
