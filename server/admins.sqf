@@ -14,5 +14,5 @@ administrators = [];
 publicVariable "administrators";
 
 serverAdministrators = ["76561198066249546"		 //Hyndi
-                    ]; 
+                       ,"76561198030533566"];            //Bayton 
 publicVariable "serverAdministrators";

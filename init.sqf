@@ -7,6 +7,7 @@
 #include "setup.sqf"
 
 StartProgress = false;
+
 enableSaving[false,false];
 
 X_Server = false;
@@ -23,7 +24,7 @@ if(isNull player) then {X_JIP = true;};
 
 true spawn {
 	if(!isDedicated) then {
-		titleText ["Welcome to GoT Wasteland v2.3, Have patience dear Padawan!", "BLACK", 0];
+		titleText ["Welcome to Team QSI GoT Wasteland v2.3, Loading", "BLACK", 0];
 		waitUntil {!isNull player};
 		client_initEH = player addEventHandler ["Respawn", {removeAllWeapons (_this select 0);}];
 	};
@@ -52,8 +53,9 @@ if(!isDedicated) then {
 
 if(X_Server) then {
 	diag_log format ["############################# %1 #############################", missionName];
-	diag_log format["WASTELAND SERVER - Initilizing Server"];
+	diag_log format["TEAM QSI WASTELAND SERVER - Initilizing Server"];
 	[] execVM "server\init.sqf";
+        call compile preProcessFile "\iniDB\init.sqf"
 };
 
 //init 3rd Party Scripts
