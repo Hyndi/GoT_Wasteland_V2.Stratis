@@ -1,0 +1,7 @@
+Users\Hyndi\Documents\GitHub\GoT_Wasteland_V2.Stratis
+======<HEADER>=======
+prefix=Users\Hyndi\Documents\GitHub\GoT_Wasteland_V2.Stratis
+Mikero=DePbo.dll
+Pbo Type is: Arma Mission with irrelevant prefix
+Sha: '50C9F20284B97DDA3C55F4D38BC67047645999CB'
+======</HEADER>============

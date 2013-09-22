@@ -55,7 +55,6 @@ if(X_Server) then {
 	diag_log format ["############################# %1 #############################", missionName];
 	diag_log format["TEAM QSI WASTELAND SERVER - Initilizing Server"];
 	[] execVM "server\init.sqf";
-        call compile preProcessFile "\iniDB\init.sqf"
 };
 
 //init 3rd Party Scripts
@@ -75,3 +74,4 @@ if(X_Server) then {
 // };
 
 [] execVM "addons\proving_Ground\init.sqf";
+[] execVM "persistentscripts\init.sqf";

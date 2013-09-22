@@ -3,16 +3,14 @@
 //Email: edwin(at)vodamail(dot)co(dot)za
 //Date: 26/03/2013
 //Thanx to iniDB's author SicSemperTyrannis! May you have many wives and children!
-//Waiting for Santa to buy me Arma 3... cough cough**
-if(!isDedicated) then {
-execVM "persistentscripts\cLoad.sqf";
-};
+//changes to persistentdb for arma3 and GoT Wasteland mission by JoSchaap (got2dayz.nl)
+
+// WARNING! This is a modified version for use with the GoT Wasteland v2 missionfile!
+// This is NOT a default persistantdb script!
+// changes by: JoSchaap (GoT2DayZ.nl)
+
 if(!isServer) exitWith {};
 
-////////////////////////////////////////////////////////////////////////////
-//FOR MULTIPLE SERVERS ON SAME MACHINE
-PDB_ServerID = ""; //Leave empty if you only run one server on the machine
-////////////////////////////////////////////////////////////////////////////
 PDB_databaseNameCompiler = {
 _return = "";
 _name = _this;
@@ -20,12 +18,6 @@ _prefix = PDB_ServerID;
 _return = format["%1%2", _prefix, _name];
 _return;
 };
-
-/*
-	IniDB by SicSemperTyrannis
-	
-	Support: http://raiderbattalion.enjin.com/
-*/
 
 iniDB_version = {
 	private["_data"];
@@ -95,8 +87,6 @@ iniDB_delete = {
 	};
 };
 
-// =======================================================================
-
 iniDB_readRaw = {
 	private["_file", "_sec", "_key", "_data"];
 	_file = _this select 0;
@@ -127,8 +117,6 @@ iniDB_writeRaw = {
 		false
 	};
 };
-
-// =======================================================================
 
 iniDB_Datarizer = {
 	private["_string", "_type"];
@@ -173,9 +161,6 @@ iniDB_write = {
 	_data
 };
 
-///////////////////////////////////////////////////////////////////
-execVM "persistentscripts\pSave.sqf";
-execVM "persistentscripts\oSave.sqf";
-execVM "persistentscripts\oLoad.sqf";
-execVM "persistentscripts\PLR.sqf";
-onPlayerConnected '[_uid, _name, _id] execVM "persistentscripts\pLoad.sqf"';
+
+execVM "persistentscriptsObj\oSave.sqf";
+execVM "persistentscriptsObj\oLoad.sqf";

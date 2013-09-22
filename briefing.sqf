@@ -331,6 +331,13 @@ player createDiaryRecord["changelog",
 		   This is a TESTBUILD and should not be used by others<br/>
 "
 ]
+
+player createDiaryRecord["changelog",
+["v2.3.1 (Team QSI)",
+"
+      [Added] Persistent loadouts
+]
+
 ];
 
 player createDiaryRecord["info",
@@ -445,7 +452,7 @@ player createDiaryRecord["info",
 "GoT/GoT2DayZ",
 "
 <br/>
-	Visit our website at:<br/><br/>
+	Visit Their website at:<br/><br/>
 	http://www.got2dayz.nl<br/>
 	<img size='4' image='client\icons\logo.paa'/><br/>
 	<br/>
@@ -474,38 +481,6 @@ player createDiaryRecord["GoT2DayZ",
 ]
 ];
 
-player createDiaryRecord["GoT2DayZ",
-[
-"Contact Admin",
-"
-<br/>
-	First of all make sure you are on the official server</br>
-	Servername: [NL] GoT Wasteland v2.3<br/><br/>
-	<img size='4' image='client\icons\logo.paa'/><br/>
-	You can try to get an admins attention in global chat.<br/>
-	If unsuccessfull you can contact us on:<br/>
-	facebook: fb.me/GoT2DayZ<br/>
-	reddit: redd.it/r/GoT2DayZ<br/>
-	website: www.got2dayz.nl<br/>
-	<br/>
-"
-]
-];
-
-player createDiaryRecord["GoT2DayZ",
-[
-"Server info",
-"
-<br/>
-	<img size='4' image='client\icons\logo.paa'/><br/>
-	Server is hosted on a dual XEON 3.2Ghz machine<br/><br/>
-	- 8GB DDR3<br/>
-	- 2x Samsung 120GB SSD<br/>
-	- Colocated 1GB unmeterred connection<br/>
-	<br/>
-"
-]
-];
 
 player createDiaryRecord["wasteland",
 [

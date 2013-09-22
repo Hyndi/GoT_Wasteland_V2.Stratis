@@ -1,5 +1,5 @@
 respawn="BASE";
-respawnDelay=15;
+respawnDelay=10;
 disabledAI=1;
 disableChannels[]={6};  //set {0,6} to disable global
 joinUnassigned = 0;
@@ -10,7 +10,7 @@ class Header
 {
 	gameType=Sandbox;
 	minPlayers=1;
-	maxPlayers=65;
+	maxPlayers=60;
 };
 author="JoSchaap (GoT2DayZ.nl & Tweakers.Net)";
 OnLoadName = "GoT Wasteland (v2.3)";
